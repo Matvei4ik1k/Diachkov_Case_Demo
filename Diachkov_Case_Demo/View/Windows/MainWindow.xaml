@@ -5,8 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Diachkov_Case_Demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Background="White">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize"
+        >
+    <Grid Background="White" >
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.6*"/>
+        </Grid.ColumnDefinitions>
         
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="2" Grid.Column="1" FontSize="30" Text="LOGIN"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" FontSize="20" Text="EMAIL"/>
+            <TextBox HorizontalAlignment="Left" Width="350" Grid.Row="6" Grid.Column="1" />
+            <TextBlock FontSize="20" Grid.Row="8" Grid.Column="1"  Text="PASSWORD"/>
+            <PasswordBox HorizontalAlignment="Left" Width="350"  Grid.Row="10" Grid.Column="1" />
+            <Button HorizontalAlignment="Left" Grid.Row="12" Grid.Column="1"  Width="200" FontSize="20" Foreground="White" Content="Login" Background="Black"/>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="NOT A MEMBER?"/>
+            <TextBlock Text=""/>
+            <Button Content="REGISTER NOW"/>
+        </Grid>
     </Grid>
 </Window>
